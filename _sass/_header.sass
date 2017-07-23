@@ -2,9 +2,10 @@ header
     position: relative
     z-index: 2
     margin: 0 auto
-    width: 60vw
-    height: auto
+    width: 747px
+    height: 100%
     padding-top: 60px
+    background: white
     #logo
         width: 100%
         padding: 1.6rem 0.4rem
@@ -12,8 +13,12 @@ header
     #logo-buy
         position: absolute
         top: 80px
-        right: 0
+        right: 190px
         background: url('../images/logo-buy.png') no-repeat
         background-size: contain
-        width: 30px
+        width: 100px
         height: 100px
+        transition: 0.25s ease-in-out
+        &:hover
+            cursor: pointer
+            transform: scale(1.15)
