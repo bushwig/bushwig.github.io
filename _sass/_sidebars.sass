@@ -4,7 +4,7 @@
     .sidebar
         position: fixed
         top: 0
-        width: 298px
+        width: 20vw
         height: 100vh !important
         background: linear-gradient(270deg, #3efae7, #ff7f7f, #e6ff75, #85ff75, #ac75ff, #ff1dab, #ffa600)
         background-size: 1400% 1400%
@@ -12,7 +12,7 @@
         -moz-animation: AnimationName 7s ease infinite
         animation: AnimationName 7s ease infinite
         &:first-of-type
-            left: calc(50vw - 374px - 298px)
+            left: 0
             .bg-side-left
                 background: url('https://s3.amazonaws.com/ijadams/bushwig/left_side.png') center top
                 background-size: cover
@@ -21,7 +21,7 @@
                 width: 100%
                 position: absolute
         &:last-of-type
-            left: calc(50vw + 374px)
+            right: 0
             .bg-side-right
                 background: url('https://s3.amazonaws.com/ijadams/bushwig/right_side.png') center top
                 background-size: cover

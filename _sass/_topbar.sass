@@ -3,18 +3,49 @@
 .top-bar
     position: fixed
     top: 0
-    left: 50%
     z-index: 100
-    margin-left: -373.5px
-    height: 36px
-    width: 747px
-    padding: 18px 0 0
-    text-align: center
-    background: $primary
+    margin-left: 20vw
+    height: 60px
+    width: 60vw
+    padding-top: 0.4rem
+    background: white
     .wrapper
         margin: 0 auto
-        padding: 5px 17px
-        width: 713px
+        padding: 0.1rem 0.8rem
+        width: 100%
         overflow: visible
         min-height: 100%
         position: relative
+        background: white
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        .social-links
+            font-size: 2rem
+            width: 50%
+            text-align: left
+            a
+                margin: 0 auto
+                padding: 0 0.4rem
+                transition: 0.1s
+                &:hover
+                    color: #f8a7cb
+        .buy-tickets
+            text-align: right
+            width: 50%
+            a
+                background: url('https://s3.amazonaws.com/ijadams/bushwig/buy-tickets.png') no-repeat
+                background-size: contain
+                width: 150px
+                height: 60px
+                text-align: right
+                float: right
+                margin-top: 0.3rem
+                &:hover
+                    background: url('https://s3.amazonaws.com/ijadams/bushwig/buy-tickets2.png') no-repeat
+                    background-size: contain
+                    width: 150px
+                    height: 60px
+                    text-align: right
+                    float: right
+                    margin-top: 0.3rem
