@@ -18,19 +18,26 @@
         display: flex
         align-items: center
         justify-content: flex-end
+        div
+            width: calc(100% / 3)
+        .dates
+            text-align: center
+            h1
+                letter-spacing: 5px
+                font-family: 'strange', sans-serif
         .social-links
             font-size: 2rem
-            width: 50%
             text-align: left
             a
                 margin: 0 auto
                 padding: 0 0.4rem
                 transition: 0.1s
+                color: $primary
                 &:hover
                     color: #f8a7cb
+                    cursor: pointer
         .buy-tickets
             text-align: right
-            width: 50%
             a
                 background: url('https://s3.amazonaws.com/ijadams/bushwig/buy-tickets.png') no-repeat
                 background-size: contain
@@ -47,6 +54,7 @@
                 &:hover
                     background: url('https://s3.amazonaws.com/ijadams/bushwig/buy-tickets2.png') no-repeat
                     background-size: contain
+                    cursor: pointer
                     width: 150px
                     height: 60px
                     text-align: right

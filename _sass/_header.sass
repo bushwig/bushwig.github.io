@@ -1,3 +1,5 @@
+@import "variables"
+
 header
     position: relative
     z-index: 2
@@ -6,13 +8,30 @@ header
     height: 100%
     padding-top: 60px
     background: white
+    > div
+        display: block
+        text-align: center
+    h1
+        font-family: 'strange', sans-serif
+        font-size: 6rem !important
+        span
+            background: url('../images/lil-heart.png') no-repeat
+            background-size: contain
+            height: 25px
+            width: 25px
+            margin-bottom: -10px
+            display: inline-block
+    hr
+        height: 2px
+        width: 60%
+        background: $primary
     #logo
         width: 100%
-        padding: 1.6rem 0.4rem
+        padding: 2.4rem 0.4rem 0 0.4rem
         margin: 0 auto
     #logo-buy
         position: absolute
-        top: 80px
+        top: 90px
         right: 190px
         background: url('../images/logo-buy.png') no-repeat
         background-size: contain
