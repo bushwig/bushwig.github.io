@@ -1,0 +1,29 @@
+@import "variables"
+
+nav
+    position: relative
+    z-index: 2
+    margin: 0 auto
+    width: 747px
+    height: auto
+    background: white
+    @media screen and (max-width: 747px)
+        width: 100%
+    ul
+        text-align: center
+        padding: 0
+        li
+            list-style: none
+            display: inline-block
+            font-family: 'strange', sans-serif
+            font-size: 6rem !important
+            padding: 0 0.8rem
+            transition: 0.5 ease-in-out
+            a
+                color: $primary
+                &:hover, &:focus
+                    text-decoration: none
+                    opacity: 0.6
+
+            img
+                height: 4rem

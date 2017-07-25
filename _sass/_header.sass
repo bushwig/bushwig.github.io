@@ -5,21 +5,20 @@ header
     z-index: 2
     margin: 0 auto
     width: 747px
-    height: 100%
+    height: auto
     padding-top: 60px
     background: white
+    @media screen and (max-width: 747px)
+        width: 100%
+        padding-top: 100px
     > div
         display: block
         text-align: center
     h1
         font-family: 'strange', sans-serif
         font-size: 6rem !important
-        span
-            background: url('../images/lil-heart.png') no-repeat
-            background-size: contain
-            height: 25px
-            width: 25px
-            margin-bottom: -10px
+        img
+            max-height: 30px
             display: inline-block
     hr
         height: 2px
@@ -38,6 +37,11 @@ header
         width: 100px
         height: 100px
         transition: 0.25s ease-in-out
+        @media screen and (max-width: 747px)
+            width: 50px
+            height: 50px
+            top: 125px
+            right: 100px
         &:hover
             cursor: pointer
             transform: scale(1.15)
