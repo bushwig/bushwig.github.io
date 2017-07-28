@@ -6,17 +6,18 @@
         top: 0
         width: calc((100vw - 747px)/ 2)
         height: 100vh !important
-        background: linear-gradient(270deg, #3efae7, #ff7f7f, #e6ff75, #85ff75, #ac75ff, #ff1dab, #ffa600)
-        background-size: 1400% 1400%
-        -webkit-animation: AnimationName 7s ease infinite
-        -moz-animation: AnimationName 7s ease infinite
-        animation: AnimationName 7s ease infinite
+        background: white
+        // background: linear-gradient(270deg, #3efae7, #ff7f7f, #e6ff75, #85ff75, #ac75ff, #ff1dab, #ffa600)
+        // background-size: 1400% 1400%
+        // -webkit-animation: AnimationName 7s ease infinite
+        // -moz-animation: AnimationName 7s ease infinite
+        // animation: AnimationName 7s ease infinite
         @media screen and (max-width: 747px)
             display: none
         &:first-of-type
             left: 0
             .bg-side-left
-                background: url('https://s3.amazonaws.com/ijadams/bushwig/left_side.png') center top
+                background: url('../images/left_side.png') center top
                 background-size: cover
                 background-attachment: no-repeat
                 height: 200%
@@ -25,7 +26,7 @@
         &:last-of-type
             right: 0
             .bg-side-right
-                background: url('https://s3.amazonaws.com/ijadams/bushwig/right_side.png') center top
+                background: url('../images/right_side.png') center top
                 background-size: cover
                 background-attachment: no-repeat
                 height: 200%
