@@ -8,7 +8,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Bushwig
 email: ijadams503@gmail.com
-description: Bushwig - Baton Rouge, LA
+description: Bushwig Festival - Knockdown Center, NYC 2017
 url: "http://bushwig.com/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
