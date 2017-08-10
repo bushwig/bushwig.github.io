@@ -24,21 +24,41 @@ body
         padding: 0 1.6rem
         img
             width: 100%
-    .button
-        background: $primary
-        color: white
-        padding: 2rem
-        display: inline-block
-        margin: 2rem auto
-        font-family: 'Typesketchbook', sans-serif
-        transition: 0.2s ease-in-out
-        &:hover
-            opacity: 0.8
-            text-decoration: none
+    footer
+        text-align: center
+        position: relative;
+        z-index: 1;
+        margin: 0 auto;
+        width: 747px;
+        height: auto;
+        padding-top: .2rem;
+        padding-bottom: 2.4rem;
+        background: #fff;
+        img
+            display: block
+            max-width: 800px
+            width: 100%
+        .button
+            background: $primary
+            color: white
+            padding: 2rem
+            display: inline-block
+            margin: 2rem auto
+            font-family: 'Typesketchbook', sans-serif
+            transition: 0.2s ease-in-out
+            &:hover
+                opacity: 0.8
+                text-decoration: none
     .desktop-only
         display: block
     .mobile-only
         display: none
+    hr
+        height: 2px
+        width: 60%
+        background: $primary
+        &:last-of-type
+            margin-top: 10px
 
     @media screen and (max-width: 747px)
             .desktop-only
