@@ -10,13 +10,16 @@ html
   font-size: 62.5%
   height: 100%
   box-sizing: border-box
+  overflow: auto
 
 body
     position: relative
     margin: 0
-    height: 150vh
+    height: auto
     font-family: 'HelveticaNeue', sans-serif
     color: $primary
+    @media screen and (max-width: 747px)
+        padding: .2rem 1.6rem 2.4rem 1.6rem
     h1, h2, h3, h4
         font-family: 'Typesketchbook', sans-serif
         text-transform: uppercase
@@ -24,18 +27,23 @@ body
         color: $pink
     article
         padding: 0 1.6rem
+        @media screen and (max-width: 747px)
+            padding: 0
         img
             width: 100%
     footer
         text-align: center
-        position: relative;
-        z-index: 1;
-        margin: 0 auto;
-        width: 747px;
-        height: auto;
-        padding-top: .2rem;
-        padding-bottom: 2.4rem;
-        background: #fff;
+        position: relative
+        z-index: 1
+        margin: 0 auto
+        width: 747px
+        height: auto
+        padding-top: .2rem
+        padding-bottom: 2.4rem
+        background: #fff
+        @media screen and (max-width: 747px)
+            width: 100%
+            padding: 0
         img
             display: block
             max-width: 800px
