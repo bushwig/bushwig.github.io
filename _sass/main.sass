@@ -18,6 +18,26 @@ body
     height: auto
     font-family: 'HelveticaNeue', sans-serif
     color: $primary
+    a.button, button
+        background: $primary
+        color: white
+        padding: 2rem
+        line-height: 100%
+        text-decoration: none
+        display: inline-block
+        font-family: 'Typesketchbook', sans-serif
+        transition: 0.2s ease-in-out
+        font-size: 2.2rem
+        margin: 2rem auto
+        letter-spacing: 1px
+        &.small
+            padding: 1rem
+            font-size: 1.4rem
+        &:hover
+            opacity: 0.8
+            text-decoration: none
+            border-radius: 0.8rem
+            background: #f8a7cb
     @media screen and (max-width: 747px)
         padding: .2rem 1.6rem 2.4rem 1.6rem
     h1, h2, h3, h4
@@ -61,10 +81,13 @@ body
             font-size: 2.2rem
             margin: 2rem auto
             letter-spacing: 1px
+            &.small
+                padding: 1rem
+                font-size: 1.8rem
             &:hover
                 opacity: 0.8
                 text-decoration: none
-                border-radius: 1rem
+                border-radius: 0.8rem
                 background: #f8a7cb
     .desktop-only
         display: block
