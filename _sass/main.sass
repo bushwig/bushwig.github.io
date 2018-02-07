@@ -1,10 +1,4 @@
 @import "variables"
-@import "sidebars"
-@import "topbar"
-@import "header"
-@import "nav"
-@import "home-content"
-@import "interior"
 
 html
   font-size: 62.5%
@@ -16,8 +10,68 @@ body
     position: relative
     margin: 0
     height: auto
-    font-family: 'HelveticaNeue', sans-serif
-    color: $primary
+    font-family: 'flowers', sans-serif
+    color: white
+    section
+        position: relative
+        height: 100vh
+        width: 100%
+        background: purple
+        display: flex
+        align-items: center
+        justify-content: center
+        .container
+            text-align: center
+            margin: 0 auto
+            a
+                color: inherit
+                transition: 0.2s ease-in
+                text-decoration: none
+                &:hover
+                    cursor: pointer
+                    opacity: 0.8
+                    text-decoration: none
+            h1
+                line-height: 250%
+            @media screen and (max-width: 768px)
+                h1
+                    line-height: 225%
+                    font-size: 2.4rem
+                h3
+                    font-size: 1rem
+
+    #one
+        background: black
+        z-index: 0
+        > div.container
+          position: fixed
+          right: 0
+          bottom: 0
+          min-width: 100%
+          min-height: 100%
+          width: auto
+          height: auto
+          z-index: 0
+          display: flex
+          align-items: center
+          justify-content: center
+        video
+          position: fixed
+          right: 0
+          bottom: 0
+          min-width: 100%
+          min-height: 100%
+          width: auto
+          height: auto
+          z-index: 0
+    #two
+        background: url('../images/section1.jpg') no-repeat
+        background-position: center
+        background-size: cover
+    #three
+        background: url('../images/section2.jpg') no-repeat
+        background-position: center
+        background-size: cover
     a.button, button
         background: $primary
         color: white
@@ -38,41 +92,6 @@ body
             text-decoration: none
             border-radius: 0.8rem
             background: #f8a7cb
-    @media screen and (max-width: 747px)
-        padding: .2rem 1.6rem 2.4rem 1.6rem
-    h1, h2, h3, h4
-        font-family: 'Typesketchbook', sans-serif
-        text-transform: uppercase
-    .pink
-        color: $pink
-    article
-        padding: 0 1.6rem
-        @media screen and (max-width: 747px)
-            padding: 0
-        img
-            width: 100%
-    #lineup
-        text-align: center
-        img
-            width: 100%
-            max-width: 1100px
-    footer
-        text-align: center
-        position: relative
-        z-index: 1
-        margin: 0 auto
-        width: 747px
-        height: auto
-        padding-top: .2rem
-        padding-bottom: 2.4rem
-        background: #fff
-        @media screen and (max-width: 747px)
-            width: 100%
-            padding: 0
-        img
-            display: block
-            max-width: 800px
-            width: 100%
 
         a.button, button
             background: $primary
@@ -104,7 +123,21 @@ body
         background: $primary
         &:last-of-type
             margin-top: 10px
-
+    footer
+        position: relative
+        text-align: center
+        background: #ff99cc
+        color: black
+        height: 60px
+        display: flex
+        align-items: center
+        justify-content: center
+        h3, a
+            font-family: sans-serif
+            color: black
+            margin: 0 auto
+        a:hover
+            cursor: pointer
     @media screen and (max-width: 747px)
             .desktop-only
                 display: none

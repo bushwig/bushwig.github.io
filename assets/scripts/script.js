@@ -1,25 +1,34 @@
 $(document).ready(function() {
+    var vid = document.getElementById("bgvid");
+    var pauseButton = document.querySelector("#polina button");
 
-    $(window).scroll(function(e){
-      parallax();
-    });
-
-    function parallax(){
-      var scrolled = $(window).scrollTop();
-      $('.parallax').css('top',-(scrolled*0.15)+'px');
+    if (window.matchMedia('(prefers-reduced-motion)').matches) {
+        vid.removeAttribute("autoplay");
+        vid.pause();
+        pauseButton.innerHTML = "Paused";
     }
 
-    var current = location.pathname;
-    $('#menu li a').each(function(){
-        var $this = $(this);
-        // if the current path is like this link, make it active
-        if($this.attr('href').indexOf(current) !== -1){
-            $this.addClass('active');
-        }
-    });
-
-    if (current == '/info.html') {
-        $('#menu li img').attr('src','https://s3.amazonaws.com/ijadams/bushwig/lil-peace-bold.png');
+    function vidFade() {
+      vid.classList.add("stopfade");
     }
 
+    vid.addEventListener('ended', function()
+    {
+    // only functional if "loop" is removed
+    vid.pause();
+    // to capture IE10
+    vidFade();
+    });
+
+
+    pauseButton.addEventListener("click", function() {
+      vid.classList.toggle("stopfade");
+      if (vid.paused) {
+        vid.play();
+        pauseButton.innerHTML = "Pause";
+      } else {
+        vid.pause();
+        pauseButton.innerHTML = "Paused";
+      }
+    })
 });
