@@ -13,6 +13,7 @@ body
     font-family: 'flowers', sans-serif
     color: white
     section
+        position: relative
         height: 100vh
         width: 100%
         background: purple
@@ -22,12 +23,55 @@ body
         .container
             text-align: center
             margin: 0 auto
+            a
+                color: inherit
+                transition: 0.2s ease-in
+                text-decoration: none
+                &:hover
+                    cursor: pointer
+                    opacity: 0.8
+                    text-decoration: none
             h1
                 line-height: 250%
-    #one
-    #two
-    #three
+            @media screen and (max-width: 768px)
+                h1
+                    line-height: 225%
+                    font-size: 2.4rem
+                h3
+                    font-size: 1rem
 
+    #one
+        background: black
+        z-index: 0
+        > div.container
+          position: fixed
+          right: 0
+          bottom: 0
+          min-width: 100%
+          min-height: 100%
+          width: auto
+          height: auto
+          z-index: 0
+          display: flex
+          align-items: center
+          justify-content: center
+        video
+          position: fixed
+          right: 0
+          bottom: 0
+          min-width: 100%
+          min-height: 100%
+          width: auto
+          height: auto
+          z-index: 0
+    #two
+        background: url('../images/section1.jpg') no-repeat
+        background-position: center
+        background-size: cover
+    #three
+        background: url('../images/section2.jpg') no-repeat
+        background-position: center
+        background-size: cover
     a.button, button
         background: $primary
         color: white
@@ -80,16 +124,18 @@ body
         &:last-of-type
             margin-top: 10px
     footer
+        position: relative
         text-align: center
         background: #ff99cc
         color: black
-        height: 50px
+        height: 60px
         display: flex
         align-items: center
         justify-content: center
         h3, a
             font-family: sans-serif
             color: black
+            margin: 0 auto
         a:hover
             cursor: pointer
     @media screen and (max-width: 747px)
