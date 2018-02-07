@@ -1,10 +1,4 @@
 @import "variables"
-@import "sidebars"
-@import "topbar"
-@import "header"
-@import "nav"
-@import "home-content"
-@import "interior"
 
 html
   font-size: 62.5%
@@ -16,8 +10,24 @@ body
     position: relative
     margin: 0
     height: auto
-    font-family: 'HelveticaNeue', sans-serif
-    color: $primary
+    font-family: 'flowers', sans-serif
+    color: white
+    section
+        height: 100vh
+        width: 100%
+        background: purple
+        display: flex
+        align-items: center
+        justify-content: center
+        .container
+            text-align: center
+            margin: 0 auto
+            h1
+                line-height: 250%
+    #one
+    #two
+    #three
+
     a.button, button
         background: $primary
         color: white
@@ -38,41 +48,6 @@ body
             text-decoration: none
             border-radius: 0.8rem
             background: #f8a7cb
-    @media screen and (max-width: 747px)
-        padding: .2rem 1.6rem 2.4rem 1.6rem
-    h1, h2, h3, h4
-        font-family: 'Typesketchbook', sans-serif
-        text-transform: uppercase
-    .pink
-        color: $pink
-    article
-        padding: 0 1.6rem
-        @media screen and (max-width: 747px)
-            padding: 0
-        img
-            width: 100%
-    #lineup
-        text-align: center
-        img
-            width: 100%
-            max-width: 1100px
-    footer
-        text-align: center
-        position: relative
-        z-index: 1
-        margin: 0 auto
-        width: 747px
-        height: auto
-        padding-top: .2rem
-        padding-bottom: 2.4rem
-        background: #fff
-        @media screen and (max-width: 747px)
-            width: 100%
-            padding: 0
-        img
-            display: block
-            max-width: 800px
-            width: 100%
 
         a.button, button
             background: $primary
@@ -104,7 +79,19 @@ body
         background: $primary
         &:last-of-type
             margin-top: 10px
-
+    footer
+        text-align: center
+        background: #ff99cc
+        color: black
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        h3, a
+            font-family: sans-serif
+            color: black
+        a:hover
+            cursor: pointer
     @media screen and (max-width: 747px)
             .desktop-only
                 display: none
