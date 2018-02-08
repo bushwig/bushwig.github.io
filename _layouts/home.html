@@ -19,19 +19,10 @@
 
   </head>
   <body class="home">
-    <section id="one">
-    <video poster="{{ site.baseurl }}/assets/images/trim.jpg" id="bgvid" playsinline autoplay muted loop>
-    <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-    <source src="{{ site.baseurl }}/assets/images/trim.mp4" type="video/mp4">
-    </video>
-    <div class="container">
-        <h1><a href="mailto:Rossa@Bushwig.com">BUSHWIG BERLIN<br>
-              SUMMER 2018<br>
-              TO BE ANNOUCED!</a>
-        </h1>
-    </div>
-    </section>
-    <section id="two">
+    <section id="la">
+        <div class="mobile-only">
+            <img src="{{ site.baseurl }}/assets/images/fl-logo.jpg" alt="">
+        </div>
         <div class="container">
             <h1>
                 <a href="https://www.facebook.com/events/170395610393487" target="_blank">SATURDAY 17TH FEBRUARY  <br>
@@ -39,14 +30,36 @@
             </h1>
         </div>
     </section>
-    <section id="three">
+    <section id="acid">
         <div class="container">
-            <h1><a href="https://web.facebook.com/events/1987892094756094" target="_blank">
-                MONDAY 19TH FEBRUARY<br>
-                DRAG QUEENS ON ACID
+            <h1>
+                <a href="https://web.facebook.com/events/1987892094756094" target="_blank">
+                    MONDAY 19TH FEBRUARY<br>
+                    DRAG QUEENS ON ACID
+                </a>
             </h1>
         </div>
     </section>
+    <section id="berlin">
+        <div class="video-container">
+            <div class="title-container">
+                <div class="headline">
+                    <h1><a href="mailto:Rossa@Bushwig.com">BUSHWIG BERLIN<br>
+                          SUMMER 2018<br>
+                          TO BE ANNOUCED!</a>
+                    </h1>
+                </div>
+            </div>
+            <video poster="{{ site.baseurl }}/assets/images/trim.jpg" id="bgvid" playsinline autoplay muted loop class="fillWidth">
+            <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+            <source src="{{ site.baseurl }}/assets/images/trim2.mp4" type="video/mp4">
+            </video>
+            <div class="poster hidden">
+                <img src="{{ site.baseurl }}/assets/images/trim.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
     <footer>
       <h3><a href="mailto:info@bushwig.com">Bushwig® contact: info@bushwig.com</a></h3>
     </footer>
